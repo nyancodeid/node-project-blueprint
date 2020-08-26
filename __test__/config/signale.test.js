@@ -24,4 +24,24 @@ describe("Signale Config Test", () => {
     expect(Log.logInfo).to.be.a("function");
     expect(message).to.equal(expected);
   });
+  it("it will be run logSuccess using array of string", () => {
+    const expected = `[APP][CONFIG] Simple message log from config`;
+    const message = Log.logSuccess(
+      ["APP", "CONFIG"],
+      "Simple message log from config"
+    );
+
+    expect(Log.logSuccess).to.be.a("function");
+    expect(message).to.equal(expected);
+  });
+  it("it will be run logError using array of string", () => {
+    const expected = `[APP][CONFIG] Simple message log from config`;
+    const message = Log.logError(
+      ["APP", "CONFIG"],
+      "Simple message log from config"
+    );
+
+    expect(Log.logError).to.be.a("function");
+    expect(message).to.equal(expected);
+  });
 });
