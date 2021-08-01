@@ -22,7 +22,7 @@
     "signale": "^1.4.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.10.4",
+    "@babel/cli": "^7.14.8",
     "@babel/core": "^7.10.4",
     "@babel/node": "^7.10.4",
     "@babel/plugin-syntax-optional-chaining": "^7.8.3",
